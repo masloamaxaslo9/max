@@ -1,0 +1,29 @@
+.site-home-page {
+  position: relative;
+  overflow: auto;
+  background: radial-gradient(
+                  ellipse at 50% 100%,
+                  rgba(255, 255, 255, 0) 30%,
+                  #5630C3 30%,
+                  #5630C3,
+                  #0225F3,
+                  #2AC3FC,
+                  #41C903,
+                  #FEF506,
+                  #FE9307,
+                  #FE080D 70%,
+                  rgba(255, 255, 255, 0) 70%,
+                  rgba(255, 255, 255, 0)
+  );
+  min-height: 100vh;
+
+  h1 {
+    margin-top: 75vh;
+    font-size: 5rem;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+  }
+}
