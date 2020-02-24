@@ -1,29 +1,100 @@
-.site-home-page {
-  position: relative;
-  overflow: auto;
-  background: radial-gradient(
-                  ellipse at 50% 100%,
-                  rgba(255, 255, 255, 0) 30%,
-                  #5630C3 30%,
-                  #5630C3,
-                  #0225F3,
-                  #2AC3FC,
-                  #41C903,
-                  #FEF506,
-                  #FE9307,
-                  #FE080D 70%,
-                  rgba(255, 255, 255, 0) 70%,
-                  rgba(255, 255, 255, 0)
-  );
+html, body {
+  width: 1000px;
   min-height: 100vh;
+  margin: auto;
+}
 
-  h1 {
-    margin-top: 75vh;
-    font-size: 5rem;
-    text-align: center;
-    font-family: Calibri, sans-serif;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.topbar {
+  display: flex;
+  background-color: #2e2e2e;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+
+  .lside {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Georgia;
+    font-weight: 400;
+    color: #9f9f9f;
+    margin-left: 20px;
+    margin-top: -6px;
+
+    li {
+      text-decoration: none;
+      margin-right: 4px;
+    }
+
+    a {
+      color: #7d7d7d;
+      text-decoration: none;
+    }
+  }
+
+  .rside {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 10px;
+      width: 32px;
+      height: 32px;
+      border-width: 16px;
+      border-radius: 50%;
+      background-color: #9f9f9f;
+
+      img {
+        margin-top: 4px;
+        width: 100%;
+        height: 100%;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+    }
+
+    .rside__lin:hover {
+      background-color: #0e76a8;
+      cursor: pointer;
+    }
+
+    .rside__tw:hover {
+      background-color: #00acee;
+      cursor: pointer;
+    }
+
+    .rside__pin:hover {
+      background-color: #c8232c;
+      cursor: pointer;
+    }
+
+    .rside__g:hover {
+      background-color: #db4a39;
+      cursor: pointer;
+    }
+
+    .rside__rss:hover {
+      background-color: #ee802f;
+      cursor: pointer;
+    }
   }
 }
